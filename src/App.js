@@ -1,7 +1,13 @@
+import Header from "./Header";
+import ToDoList from "./ToDoList";
+import Footer from "./Footer";
+
 function App() {
   return (
     <div className="App">
-      <p></p>
+      <Header />
+      <ToDoList />
+      <Footer />
     </div>
   );
 }
