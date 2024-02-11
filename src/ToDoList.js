@@ -1,10 +1,18 @@
 import React from "react";
+import ToDoItem from "./ToDoItem";
 
-const ToDoList = () => {
+const ToDoList = ({ tasks, checkTask, deleteTask }) => {
   return (
-    <div>
-      <h1>ToDoList</h1>
-    </div>
+    <ul>
+      {tasks.map((task) => (
+        <ToDoItem
+          key={task.id}
+          task={task}
+          checkTask={checkTask}
+          deleteTask={deleteTask}
+        />
+      ))}
+    </ul>
   );
 };
 
