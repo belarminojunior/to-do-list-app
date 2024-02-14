@@ -1,11 +1,11 @@
 import React from "react";
-import ToDoItem from "./ToDoItem";
+import TaskLine from "./TaskLine";
 
-const ToDoList = ({ tasks, checkTask, deleteTask }) => {
+const TaskList = ({ tasks, checkTask, deleteTask }) => {
   return (
     <ul>
       {tasks.map((task) => (
-        <ToDoItem
+        <TaskLine
           key={task.id}
           task={task}
           checkTask={checkTask}
@@ -16,4 +16,4 @@ const ToDoList = ({ tasks, checkTask, deleteTask }) => {
   );
 };
 
-export default ToDoList;
+export default TaskList;

@@ -1,7 +1,7 @@
 import React from "react";
 import { FaTrashAlt } from "react-icons/fa";
 
-const ToDoItem = ({ task, checkTask, deleteTask }) => {
+const TaskLine = ({ task, checkTask, deleteTask }) => {
   return (
     <li className="task" key={task.id}>
       <input
@@ -27,4 +27,4 @@ const ToDoItem = ({ task, checkTask, deleteTask }) => {
   );
 };
 
-export default ToDoItem;
+export default TaskLine;

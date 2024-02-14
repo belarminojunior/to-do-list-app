@@ -1,17 +1,17 @@
 import React, { useRef } from "react";
 import { FaPlus } from "react-icons/fa";
 
-const AddTask = ({ newTask, setNewTask, handleSubmit }) => {
+const AddTask = ({ newTask, setNewTask, submitTask }) => {
   const inputRef = useRef();
 
   return (
-    <form action="" className="addForm" onSubmit={handleSubmit}>
+    <form action="" className="addForm" onSubmit={submitTask}>
       <label htmlFor="addTask">Add Task</label>
       <input
         type="text"
         autoFocus
         id="addTask"
-        placeholder="addTask"
+        placeholder="Add Task"
         required
         value={newTask}
         onChange={(e) => setNewTask(e.target.value)}

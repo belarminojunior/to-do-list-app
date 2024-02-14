@@ -1,12 +1,12 @@
 import React from "react";
 
-import ToDoItem from "./ToDoItem";
+import TaskLine from "./TaskLine";
 
-const Content = () => {
+const Content = ({ tasks, checkTask, deleteTask }) => {
   return (
     <main>
       {tasks.length ? (
-        <ToDoItem tasks={tasks} checkTask={checkTask} deleteTask={deleteTask} />
+        <TaskLine tasks={tasks} checkTask={checkTask} deleteTask={deleteTask} />
       ) : (
         <p style={{ marginTop: "2rem" }}>Your ToDo List Is Empty</p>
       )}
