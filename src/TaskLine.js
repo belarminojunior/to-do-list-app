@@ -14,14 +14,14 @@ const TaskLine = ({ task, checkTask, deleteTask }) => {
         style={task.completed ? { textDecoration: "line-through" } : null}
         onDoubleClick={() => checkTask(task.id)}
       >
-        {task.content}
+        {task.task}
       </label>
 
       <FaTrashAlt
         onClick={() => deleteTask(task.id)}
         role="button"
         tabIndex="0"
-        aria-label={`Delete ${task.content}`}
+        aria-label={`Delete ${task.task}`}
       />
     </li>
   );

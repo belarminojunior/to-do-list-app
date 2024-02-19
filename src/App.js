@@ -13,7 +13,7 @@ function App() {
   const [tasks, setTasks] = useState([]);
   const [newTask, setNewTask] = useState("");
   const [search, setSearch] = useState("");
-  const [fetchError, setFetchError] = useState("");
+  const [fetchError, setFetchError] = useState(null);
   const [isLoading, setIsLoading] = useState(true);
 
   useEffect(() => {
@@ -113,7 +113,7 @@ function App() {
         {!fetchError && !isLoading && (
           <Content
             tasks={tasks.filter((task) =>
-              task.content.toLowerCase().includes(search.toLowerCase())
+              task.task.toLowerCase().includes(search.toLowerCase())
             )}
             checkTask={checkTask}
             deleteTask={deleteTask}

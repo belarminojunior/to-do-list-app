@@ -1,9 +1,19 @@
 {
-    "tasks": [
-        {
-            "id": 1,
-            "completed": false,
-            "content": "PizzaHut"
-        }
-    ]
+  "tasks": [
+    {
+      "id": 1,
+      "completed": false,
+      "task": "Start class"
+    },
+    {
+      "id": 2,
+      "completed": false,
+      "task": "Date with Sara"
+    },
+    {
+      "id": 3,
+      "completed": false,
+      "task": "Date with Sara"
+    }
+  ]
 }

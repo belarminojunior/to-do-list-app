@@ -4,10 +4,14 @@ const Footer = ({ length }) => {
   return (
     <footer>
       <p>
-        Devoloped by <a href="#">Simão Júnior</a>
+        Devoloped by{" "}
+        <a href="https://github.com/belarminojunior">Simão Júnior</a>
       </p>
 
-      <p>{length === 1 ? "Task" : "Tasks"}</p>
+      <p>
+        {length}
+        {length === 1 ? "Task" : "Tasks"}
+      </p>
     </footer>
   );
 };

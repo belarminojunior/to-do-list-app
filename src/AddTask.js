@@ -20,7 +20,7 @@ const AddTask = ({ newTask, setNewTask, submitTask }) => {
       <button
         type="submit"
         aria-label="Add Task"
-        onClick={() => inputRef.current.focus()}
+        // onClick={() => inputRef.current.focus()}
       >
         <FaPlus />
       </button>
