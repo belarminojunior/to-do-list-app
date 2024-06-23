@@ -2,8 +2,6 @@ import React, { useRef } from "react";
 import { FaPlus } from "react-icons/fa";
 
 const AddTask = ({ newTask, setNewTask, submitTask }) => {
-  const inputRef = useRef();
-
   return (
     <form action="" className="addForm" onSubmit={submitTask}>
       <label htmlFor="addTask">Add Task</label>
@@ -17,11 +15,7 @@ const AddTask = ({ newTask, setNewTask, submitTask }) => {
         onChange={(e) => setNewTask(e.target.value)}
       />
 
-      <button
-        type="submit"
-        aria-label="Add Task"
-        // onClick={() => inputRef.current.focus()}
-      >
+      <button type="submit" aria-label="Add Task">
         <FaPlus />
       </button>
     </form>

@@ -100,7 +100,7 @@ function App() {
 
   return (
     <div className="App">
-      <Header title="To Do App" />
+      <Header title="To Do List App" />
       <AddTask
         newTask={newTask}
         setNewTask={setNewTask}

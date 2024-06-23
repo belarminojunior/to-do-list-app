@@ -2,18 +2,18 @@
   "tasks": [
     {
       "id": 1,
-      "completed": false,
-      "task": "Start class"
+      "completed": true,
+      "task": "Write exam"
     },
     {
       "id": 2,
       "completed": false,
-      "task": "Date with Sara"
+      "task": "Take a bath"
     },
     {
       "id": 3,
       "completed": false,
-      "task": "Date with Sara"
+      "task": "Code"
     }
   ]
 }

@@ -10,7 +10,7 @@ const Footer = ({ length }) => {
 
       <p>
         {length}
-        {length === 1 ? "Task" : "Tasks"}
+        {length === 1 ? " Task" : " Tasks"}
       </p>
     </footer>
   );

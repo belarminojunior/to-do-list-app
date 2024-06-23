@@ -1,7 +1,118 @@
-*,
-*::before,
-*::after {
+body {
+  font-family: Arial, sans-serif;
+  background-color: #f4f4f9;
+  color: #333;
   margin: 0;
   padding: 0;
-  box-sizing: border-box;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 100vh;
+}
+
+.App {
+  width: 90%;
+  max-width: 600px;
+  background: #fff;
+  border-radius: 8px;
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+  overflow: hidden;
+  margin: 20px;
+}
+
+/* Header Styles */
+header {
+  background: #6200ea;
+  color: white;
+  padding: 1rem;
+  text-align: center;
+}
+
+header h1 {
+  margin: 0;
+  font-size: 1.5rem;
+}
+
+/* Footer Styles */
+footer {
+  background: #6200ea;
+  color: white;
+  padding: 1rem;
+  text-align: center;
+}
+
+footer p {
+  margin: 0.5rem 0;
+}
+
+/* Form Styles */
+form.addForm,
+form.searchForm {
+  display: flex;
+  justify-content: space-between;
+  padding: 1rem;
+  border-bottom: 1px solid #ddd;
+}
+
+form.addForm input,
+form.searchForm input {
+  width: 80%;
+  padding: 0.5rem;
+  border: 1px solid #ddd;
+  border-radius: 4px;
+}
+
+form.addForm button {
+  background: #6200ea;
+  color: white;
+  border: none;
+  padding: 0.5rem 1rem;
+  border-radius: 4px;
+  cursor: pointer;
+}
+
+form.addForm button:hover {
+  background: #3700b3;
+}
+
+/* Main Content Styles */
+main {
+  padding: 1rem;
+}
+
+/* Task List Styles */
+ul {
+  list-style: none;
+  padding: 0;
+  margin: 0;
+}
+
+.task {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 0.5rem;
+  border-bottom: 1px solid #ddd;
+}
+
+.task input[type="checkbox"] {
+  margin-right: 0.5rem;
+}
+
+.task label {
+  flex-grow: 1;
+}
+
+.task svg {
+  color: #e53935;
+  cursor: pointer;
+}
+
+.task svg:hover {
+  color: #c62828;
+}
+
+.task.completed label {
+  text-decoration: line-through;
+  color: #999;
 }
